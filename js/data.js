@@ -1,7 +1,12 @@
 
 const linkURLS = [
     'http://www.kitka.org/wintersongsdaily/dec1'
-]
+];
+
+const dayGreenImage = 'img/use/green-day-final.png';
+const nightGreenImage = 'img/use/green-night-final.png';
+const dayWinterImage = 'img/use/winter-day-final.png';
+const nightWinterImage = 'img/use/winter-night-final.png';
 
 const boxes = [
     {
@@ -351,19 +356,19 @@ const starOffsets = [
     },
     {
         id: 3,
-        x: 1020,
-        y: 320,
+        x: 1080,
+        y: 340,
     },
     
     {
         id: 4,
-        x: 762,
-        y: 235,
+        x: 757,
+        y: 232,
     },
     {
         id: 5,
-        x: 855,
-        y: 427,
+        x: 852,
+        y: 420,
     },
     {
         id: 6,
@@ -372,63 +377,63 @@ const starOffsets = [
     },
     {
         id: 7,
-        x: 888,
-        y: 575,
+        x: 885,
+        y: 565,
     },
     {
         id: 8,
-        x: 942,
-        y: 270,
+        x: 935,
+        y: 260,
     },
     {
         id: 9,
-        x: 710,
-        y: 630,
+        x: 705,
+        y: 625,
     },
     {
         id: 10,
-        x: 55, 
-        y: 255,
+        x: 50, 
+        y: 250,
     },
     {
         id: 11,
-        x: 170, 
-        y: 700,
+        x: 150, 
+        y: 605,
     },
     {
         id: 12,
-        x: 882, 
-        y: 305,
+        x: 875, 
+        y: 300,
     },
     {
         id: 13,
-        x: 125, 
-        y: 240,
+        x: 120, 
+        y: 235,
     },
     {
         id: 14,
-        x: 1115, 
-        y: 577,
+        x: 1105, 
+        y: 570,
     },
     {
         id: 15,
-        x: 1026, 
-        y: 475,
+        x: 1043, 
+        y: 472,
     },
     {
         id: 16,
-        x: 1002, 
-        y: 437,
+        x: 993, 
+        y: 434,
     },
     {
         id: 17,
-        x: 290, 
-        y: 210,
+        x: 285, 
+        y: 205,
     },
     {
         id: 18,
-        x: 880, 
-        y: 200,
+        x: 860, 
+        y: 175,
     },
     {
         id: 19,
@@ -437,8 +442,8 @@ const starOffsets = [
     },
     {
         id: 20,
-        x: 1135, 
-        y: 490,
+        x: 1128, 
+        y: 485,
     },
     {
         id: 21,
@@ -452,18 +457,18 @@ const starOffsets = [
     },
     {
         id: 23,
-        x: 510, 
-        y: 570,
+        x: 507, 
+        y: 572,
     },
     {
         id: 24,
-        x: 355, 
-        y: 510,
+        x: 352, 
+        y: 512,
     },
     {
         id: 25,
-        x: 785, 
-        y: 340,
+        x: 793, 
+        y: 327,
     },
     {
         id: 26,
@@ -472,27 +477,27 @@ const starOffsets = [
     },
     {
         id: 27,
-        x: 900, 
+        x: 890, 
         y: 520,
     },
     {
         id: 28,
-        x: 215, 
-        y: 435,
+        x: 210, 
+        y: 438,
     },
     {
         id: 29,
-        x: 1155, 
-        y: 260,
+        x: 1157, 
+        y: 252,
     },
     {
         id: 30,
-        x: 625, 
-        y: 350,
+        x: 622, 
+        y: 355,
     },
     {
         id: 31,
-        x: 600, 
+        x: 593, 
         y: 440,
     },
 

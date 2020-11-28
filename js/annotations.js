@@ -53,13 +53,13 @@ function createStar(id, x, y, rotVal){
 
 const baseURL = 'http://www.kitka.org/wintersongsdaily/dec'
 
-// const storage = window.localStorage;
+const storage = window.localStorage;
 
-// const stars = JSON.parse(storage.getItem('starsFromStorage') || "[]");
+const stars = JSON.parse(storage.getItem('starsFromStorage') || "[]");
 // console.log(stars);
 
 // stars = Array.from({length : starOffsets.length}, (star, i) => starOffsets[i]);
-stars = [];
+// stars = [];
 
 
 document.body.addEventListener('mousemove', (e)=> {

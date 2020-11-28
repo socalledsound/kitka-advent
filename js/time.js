@@ -1,11 +1,15 @@
-function getImage(currentHour){
+function getImage(currentHour, day){
     console.log(currentHour);
-    if(currentHour < 8 || currentHour > 19){
-        console.log('night');
-        return nightImage; 
+    if(currentHour < 6 || currentHour > 19){
+        if(day === 31){
+            return nightGreenImage
+        } 
+        return nightWinterImage; 
     } else {
-        console.log('day');
-        return dayImage;
+        if(day === 31){
+            return dayGreenImage
+        } 
+        return dayWinterImage;
     }
 }
 
@@ -26,14 +30,12 @@ function setBoxes(currentDay){
 
 
 const mainImage = document.querySelector('#main-image');
-const dayImage = 'img/winter-day-use.png';
-const nightImage = 'img/winter-night-use.jpg';
 const time = new Date();
 const hours = time.getHours();
-// const day = time.getDate();
+//const day = time.getDate();
  const day = 31;
 
-let currentImage = getImage(hours);
+let currentImage = getImage(hours, day);
 mainImage.src = currentImage;
 
 setBoxes(day);
