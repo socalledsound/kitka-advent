@@ -1,0 +1,138 @@
+html { height: 100%; overflow:auto; }
+
+body {
+    /* background: url('village2kw.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 0; */
+}
+
+.village-image {
+    width: 1400px;
+    height: 900px;
+
+}
+
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+        border: dashed 3px #a83240;
+	}
+
+	70% {
+		transform: scale(1);
+        border: dashed 3px #a83240;
+	}
+
+	100% {
+		transform: scale(0.95);
+        border: dashed 3px #a83240;
+	}
+}
+
+img{
+    width: 100%;
+}
+
+.image-container {
+    width: 100%;
+
+}
+
+
+.star{
+    position: absolute;
+    width: 100px;
+    border: dashed 3px #a83240;
+    /* height: 100px; */
+}
+
+
+.outline{
+    animation: pulse 2s infinite;
+}
+
+.star-solid{
+    background-color: rgba(250, 25, 250, 0.3);
+    position: absolute;
+    width: 100px;
+    /* border: 3px dashed purple; */
+    /* height: 100px; */
+}
+
+.star-solid-opaque{
+    background-color: rgba(180, 25, 250, 0.9);
+    position: absolute;
+    width: 100px;
+    /* border: 3px dashed purple; */
+    /* height: 100px; */
+}
+
+
+.star-no-color{
+    /* background-color: rgba(180, 25, 250, 0.9); */
+    position: absolute;
+    width: 100px;
+    /* border: 3px dashed purple; */
+    /* height: 100px; */
+}
+
+
+
+#star10 {
+    top: 260px;
+    left: 25px;
+    width: 110px;
+    height: 80px;
+}
+
+#star2 {
+    top: 275px;
+    left: 145px;
+    width: 60px;
+    height: 60px;
+}
+
+#star3 {
+    top: 200px;
+    left: 240px;
+    width: 120px;
+    height: 180px;
+}
+
+#star4 {
+    top: 350px;
+    left: 80px;
+    width: 120px;
+    height: 80px;
+}
+
+#star5 {
+    top: 280px;
+    left: 520px;
+    width: 120px;
+    height: 100px;
+}
+
+#star6 {
+    top: 400px;
+    left: 310px;
+    width: 120px;
+    height: 60px;
+}
+
+#star7 {
+    top: 500px;
+    left: 70px;
+    width: 120px;
+    height: 60px;
+}
+
+#star8 {
+    top: 550px;
+    left: 460px;
+    width: 120px;
+    height: 60px;
+}
