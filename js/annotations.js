@@ -27,6 +27,7 @@ function createBorder(boxId, x, y, w, h, pulsing, gone){
     }
     if(pulsing){
         div.className += ' pulsing';
+        div.style.animation = 'pulse 2s infinite';
         div.addEventListener('click', (e)=>{
             // console.log(id);
             // console.log(starOffsets[id-1]);
