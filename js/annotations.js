@@ -2,6 +2,15 @@
 const myContainer = document.querySelector('#container');
 const divs = Array.from({ length: 31 });
 const baseURL = 'http://www.kitka.org/wintersongsdaily/dec'
+const starImages = [
+    'img/stars/star.png',
+    // 'img/stars/bright-star.png',
+    // 'img/stars/bronze-star.png',
+    // 'img/stars/rose-star.png',
+    // 'img/stars/copper-star.png',
+    'img/stars/pink-star.png',
+]
+
 
 const storage = window.localStorage;
 
@@ -68,7 +77,11 @@ function displayStar(id, x, y, rotVal, growing){
     star.className = 'star';
     star.id = `star${id}`;
     const img = document.createElement('img');
-    img.src = 'img/star.png';
+    const starImg = starImages[Math.floor(Math.random() * starImages.length)];
+    // const starImg = starImages[0];
+    // const starImg = 'img/stars/pink-star.png';
+    // img.src = 'img/bright-star.png';
+    img.src = starImg;
     star.appendChild(img);
     myContainer.appendChild(star);
 }
@@ -78,13 +91,13 @@ function loadStars(stars){
         displayStar(star.id, star.x, star.y, star.rotVal, false);
         // divs[star.id].className = '';
         // console.log(divs);
-        divs[star.id - 1 ].className = '';
+        divs[star.id - 1 ].className = 'hide';
     })
 }
 
 function createNewStar(star){
     displayStar(star.id, star.x, star.y, star.rotVal, true);
-    divs[star.id - 1 ].className = '';
+    divs[star.id - 1 ].className = 'hide';
 }
 
 

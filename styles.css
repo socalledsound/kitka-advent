@@ -102,7 +102,12 @@ img{
     -webkit-border: dashed 3px #a83240;
     /* animation: pulse 2s infinite;
     -webkit-animation: pulse 2s infinite; */
+}
 
+.hide{
+    display: none;
+    width: 0;
+    height: 0;
 }
 
 .nostar {
