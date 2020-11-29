@@ -98,7 +98,10 @@ img{
 }
 
 .pulsing {
-    -webkit-border: solid 3px #a83240;
+    border: dashed 3px #a83240;
+    -webkit-border: dashed 3px #a83240;
+    animation: pulse 2s infinite;
+    -webkit-animation: pulse 2s infinite;
 }
 
 .nostar {
