@@ -54,7 +54,7 @@ const boxes = [
         gone: false,
         x: 775, 
         y: 245,
-        w: 40,
+        w: 45,
         h: 60,
     },
 
