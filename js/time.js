@@ -28,8 +28,8 @@ function setBoxes(currentDay){
 const mainImage = document.querySelector('#main-image');
 const time = new Date();
 const hours = time.getHours();
-//const day = time.getDate();
- const day = 31;
+const day = time.getDate();
+//  const day = 31;
 
 let currentImage = getImage(hours, day);
 mainImage.src = currentImage;
