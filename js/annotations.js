@@ -62,7 +62,7 @@ function displayStar(id, x, y, rotVal, growing){
     if(growing){
         star.style.animation = 'grow 0.5s';  
     } else {
-        // star.style.animation = 'none';
+        star.style.animation = 'none';
     }
     
     star.className = 'star';
