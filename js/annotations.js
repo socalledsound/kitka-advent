@@ -36,9 +36,9 @@ function createBorder(boxId, x, y, w, h, pulsing, gone){
             if(!found){
                 stars.push({id, x, y, rotVal});
                 storage.setItem('starsInStorageArray', JSON.stringify(stars));
-                boxes[boxId - 1].gone = true;
-                divs[boxId - 1].className = 'box';
-                // divs[star.id].className = 'box';
+                // boxes[boxId - 1].gone = true;
+                // divs[boxId - 1].className = 'box';
+                // divs[star.id-1].className = 'box';
                
             } 
             loadStars(stars);
@@ -66,7 +66,7 @@ function createStar(id, x, y, rotVal){
 function loadStars(stars){
     stars.forEach((star, i) => {
         createStar(star.id, star.x, star.y, star.rotVal);
-        divs[star.id].className = '';
+        // divs[star.id].className = '';
         // console.log(divs);
         // divs[star.id].className = 'box';
     })
