@@ -35,6 +35,25 @@ body {
 	}
 }
 
+
+@keyframes grow {
+    0% {
+        transform: scale(0.2) rotate(0);
+    }
+    100%{
+        transform: scale(1.0) rotate(120deg);
+    }
+}
+/* 
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate();
+    }
+} */
+
 img{
     width: 100%;
 }
@@ -61,6 +80,8 @@ img{
     position: absolute;
     width: 80px;
     height: 80px;
+    /* animation: grow 1s; */
+    transition: transform 0.5s linear;
 }
 
 a.divLink {

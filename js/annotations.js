@@ -34,14 +34,15 @@ function createBorder(boxId, x, y, w, h, pulsing, gone){
             const rotVal = Math.random() * 180;
             const found = stars.find(el => el.id === boxId);
             if(!found){
-                stars.push({id, x, y, rotVal});
+                const newStar = {id, x, y, rotVal};
+                stars.push(newStar);
                 storage.setItem('starsInStorageArray', JSON.stringify(stars));
-                // boxes[boxId - 1].gone = true;
+                createNewStar(newStar);
                 // divs[boxId - 1].className = 'box';
                 // divs[star.id-1].className = 'box';
                
             } 
-            loadStars(stars);
+            
             setTimeout(() => changePage(boxId), 500);
             // e.target.className = '';
             // e.target.className = 'box';
@@ -51,11 +52,17 @@ function createBorder(boxId, x, y, w, h, pulsing, gone){
     return div
 }
 
-function createStar(id, x, y, rotVal){
+function displayStar(id, x, y, rotVal, growing){
     const star = document.createElement('div');
     star.style.left = `${x}px`;
     star.style.top = `${y}px`;
     star.style.transform = `rotate(${rotVal}deg)`;
+    if(growing){
+        star.style.animation = 'grow 0.5s';  
+    } else {
+        // star.style.animation = 'none';
+    }
+    
     star.className = 'star';
     star.id = `star${id}`;
     const img = document.createElement('img');
@@ -66,13 +73,17 @@ function createStar(id, x, y, rotVal){
 
 function loadStars(stars){
     stars.forEach((star, i) => {
-        createStar(star.id, star.x, star.y, star.rotVal);
+        displayStar(star.id, star.x, star.y, star.rotVal, false);
         // divs[star.id].className = '';
         // console.log(divs);
         divs[star.id - 1 ].className = '';
     })
 }
 
+function createNewStar(star){
+    displayStar(star.id, star.x, star.y, star.rotVal, true);
+    divs[star.id - 1 ].className = '';
+}
 
 
 divs.forEach((div, i) => {
@@ -104,4 +115,5 @@ loadStars(stars);
 
 function changePage(i){
     document.location.href = `${baseURL}${i}`;
+    // loadStars(stars);
 }
