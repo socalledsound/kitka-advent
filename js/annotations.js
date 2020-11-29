@@ -42,6 +42,7 @@ function createBorder(boxId, x, y, w, h, pulsing, gone){
                
             } 
             loadStars(stars);
+            setTimeout(() => changePage(boxId), 500);
             // e.target.className = '';
             // e.target.className = 'box';
         })
@@ -100,3 +101,7 @@ loadStars(stars);
 // stars.forEach((star) =>{
 //     createStar(star.id, star.x, star.y);
 // })
+
+function changePage(i){
+    document.location.href = `${baseURL}${i}`;
+}
