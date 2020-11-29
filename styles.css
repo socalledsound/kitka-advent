@@ -98,7 +98,7 @@ img{
 }
 
 .pulsing {
-    -webkit-border: dotted 3px #a83240;
+    -webkit-border: solid 3px #a83240;
 }
 
 .nostar {
