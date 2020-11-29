@@ -1,6 +1,6 @@
 function getImage(currentHour, day){
     console.log(currentHour);
-    if(currentHour < 6 || currentHour > 19){
+    if(currentHour < 6 || currentHour > 17){
         if(day === 31){
             return nightGreenImage
         } 
