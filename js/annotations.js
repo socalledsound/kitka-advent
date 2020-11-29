@@ -1,5 +1,5 @@
 
-const container = document.querySelector('#container');
+const myContainer = document.querySelector('#container');
 const divs = Array.from({ length: 31 });
 const baseURL = 'http://www.kitka.org/wintersongsdaily/dec'
 
@@ -49,7 +49,7 @@ function createBorder(boxId, x, y, w, h, pulsing, gone){
             // e.target.className = 'box';
         })
     }
-    container.appendChild(div);
+    myContainer.appendChild(div);
     return div
 }
 
@@ -69,7 +69,7 @@ function displayStar(id, x, y, rotVal, growing){
     const img = document.createElement('img');
     img.src = 'img/star.png';
     star.appendChild(img);
-    container.appendChild(star);
+    myContainer.appendChild(star);
 }
 
 function loadStars(stars){
