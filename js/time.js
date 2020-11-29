@@ -13,18 +13,15 @@ function getImage(currentHour, day){
     }
 }
 
-
 function setBoxes(currentDay){
    boxes.forEach( box => {
-
-        if(currentDay >= box.id){
+        if(currentDay >= box.id && !box.gone){
             box.pulsing = true;
        }
-     
-     
-
    })
 }
+
+
 
 // setInterval(outline, 1000);
 
