@@ -25,9 +25,6 @@ function setBoxes(currentDay){
 
 
 
-// setInterval(outline, 1000);
-
-
 const mainImage = document.querySelector('#main-image');
 const time = new Date();
 const hours = time.getHours();
@@ -39,17 +36,6 @@ mainImage.src = currentImage;
 
 setBoxes(day);
 
-let counter = 0;
 
-// function outline(){
-//     console.log(counter);
-//     console.log(boxes[counter].id);
-//     boxes[counter].current = true;
-//     boxes.forEach(item => {
-//         console.log('hi');
-//         createBorder(item.id, item.x, item.y, item.w, item.h, item.past, item.current);
-//     })
-//     counter++
-// }
 
 

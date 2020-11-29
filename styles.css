@@ -35,6 +35,26 @@ body {
 	}
 }
 
+@-webkit-keyframes pulse {
+	0% {
+		transform: scale(0.95);
+        border: dashed 3px #a83240;
+        border-radius: 3px;
+	}
+
+	70% {
+		transform: scale(1);
+        border: dashed 3px #a83240;
+        border-radius: 3px;
+	}
+
+	100% {
+		transform: scale(0.95);
+        border: dashed 3px #a83240;
+        border-radius: 3px;
+	}
+}
+
 
 @keyframes grow {
     0% {
@@ -44,6 +64,16 @@ body {
         transform: scale(1.0) rotate(120deg);
     }
 }
+
+@-webkit-keyframes grow {
+    0% {
+        transform: scale(0.2) rotate(0);
+    }
+    100%{
+        transform: scale(1.0) rotate(120deg);
+    }
+}
+
 /* 
 @keyframes rotate {
     0% {
