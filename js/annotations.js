@@ -5,8 +5,8 @@ const baseURL = 'http://www.kitka.org/wintersongsdaily/dec'
 
 const storage = window.localStorage;
 
-// const stars = JSON.parse(storage.getItem('starsInStorageArray') || "[]");
-const stars = [];
+const stars = JSON.parse(storage.getItem('starsInStorageArray') || "[]");
+// const stars = [];
 console.log(stars);
 
 
@@ -42,7 +42,7 @@ function createBorder(boxId, x, y, w, h, pulsing, gone){
                
             } 
             loadStars(stars);
-            e.target.className = '';
+            // e.target.className = '';
             // e.target.className = 'box';
         })
     }
@@ -68,7 +68,7 @@ function loadStars(stars){
         createStar(star.id, star.x, star.y, star.rotVal);
         // divs[star.id].className = '';
         // console.log(divs);
-        // divs[star.id].className = 'box';
+        divs[star.id - 1 ].className = '';
     })
 }
 
