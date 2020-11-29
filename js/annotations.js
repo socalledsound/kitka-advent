@@ -3,7 +3,7 @@ const myContainer = document.querySelector('#container');
 const divs = Array.from({ length: 31 });
 const baseURL = 'http://www.kitka.org/wintersongsdaily/dec'
 const starImages = [
-    // 'img/stars/star.png',
+    'img/stars/star.png',
     // 'img/stars/bright-star.png',
     // 'img/stars/bronze-star.png',
     // 'img/stars/rose-star.png',
