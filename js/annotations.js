@@ -2,14 +2,14 @@
 const myContainer = document.querySelector('#container');
 const divs = Array.from({ length: 31 });
 const baseURL = 'http://www.kitka.org/wintersongsdaily/dec'
-const starImages = [
-    // 'img/stars/star.png',
-    'img/stars/use-star.png',
-    // 'img/stars/bronze-star.png',
-    // 'img/stars/rose-star.png',
-    // 'img/stars/copper-star.png',
-    // 'img/stars/pink-star.png',
-]
+// const starImages = [
+//     // 'img/stars/star.png',
+//     'img/stars/use-star.png',
+//     // 'img/stars/bronze-star.png',
+//     // 'img/stars/rose-star.png',
+//     // 'img/stars/copper-star.png',
+//     // 'img/stars/pink-star.png',
+// ]
 
 
 const storage = window.localStorage;
@@ -100,33 +100,13 @@ function createNewStar(star){
     divs[star.id - 1 ].className = 'hide';
 }
 
-
 divs.forEach((div, i) => {
     const { id, x, y, w, h, pulsing, gone} = boxes[i]; 
     divs[i] = createBorder(id, x, y, w, h, pulsing, gone);
     console.log(divs);
 })
 
-
 loadStars(stars);
-
-
-// document.body.addEventListener('mousemove', (e)=> {
-//     const rect = e.target.getBoundingClientRect();
-//     // console.log('x:', e.clientX - rect.x);
-//     // console.log('y:', e.clientY - rect.y);
-// })
-
-
-
-// boxes.forEach(box => {
-//     console.log('hi');
-//     createBorder(box.id, box.x, box.y, box.w, box.h, box.pulsing, box.gone);
-// })
-
-// stars.forEach((star) =>{
-//     createStar(star.id, star.x, star.y);
-// })
 
 function changePage(i){
     document.location.href = `${baseURL}${i}`;
